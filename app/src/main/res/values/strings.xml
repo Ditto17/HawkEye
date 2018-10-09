@@ -8,4 +8,26 @@
     <string name="create_account">Create Account</string>
     <string name="main_page">Main Page</string>
     <string name="log_out">Log Out</string>
+    <string name="create_a_new_account">Create A New Account</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="all_users">All Users</string>
+    <string name="welcome_hawk_z_chat_app">Welcome Hawk\'z Chat App</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="register">REGISTER</string>
+    <string name="button">Button</string>
+    <string name="welcome_to_hawkz_dimension">Welcome to Hawkz Dimension</string>
+    <string name="search">Search</string>
+    <string name="username">Username</string>
+    <string name="login_or_register_to_get_started">Login or Register to get started</string>
+    <string name="login">Login</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_with_your_email_to_start_exploring">Login with your email to start exploring</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="display_names">Display Name</string>
+    <string name="status">Status!</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="deafault_status">Status</string>
+    <string name="default_status">status</string>
 </resources>
