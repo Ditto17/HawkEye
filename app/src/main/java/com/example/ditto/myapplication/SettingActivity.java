@@ -47,18 +47,16 @@ public class SettingActivity extends AppCompatActivity {
 
         String current_uid = mCurrentUser.getUid();
 
-        mUserDatabase = FirebaseDatabase.getInstance().getReference().child("users").child(current_uid);
+        mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
 
         mUserDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 String name = dataSnapshot.child("name").getValue().toString();
-                String image = dataSnapshot.child("iamge").getValue().toString();
+                String image = dataSnapshot.child("image").getValue().toString();
                 String status = dataSnapshot.child("status").getValue().toString();
-                String thumb_image = dataSnapshot.child("thumb_iamge").getValue().toString();
-
-                //Toast.makeText(SettingActivity.this, dataSnapshot.toString(), Toast.LENGTH_LONG).show();
+                String thumb_image = dataSnapshot.child("thumb_image").getValue().toString();
 
                 mName.setText(name);
                 mStatus.setText(status);

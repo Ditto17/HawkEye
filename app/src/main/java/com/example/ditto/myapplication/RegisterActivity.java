@@ -57,7 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         mRegProgress = new ProgressDialog(this);
 
-        //input from user
+        //input from users
         mDisplayName = (TextInputLayout) findViewById(R.id.reg_display_name);
         mEmail = (TextInputLayout) findViewById(R.id.login_email);
         mPassword = (TextInputLayout) findViewById(R.id.login_password);
@@ -99,12 +99,12 @@ public class RegisterActivity extends AppCompatActivity {
                    FirebaseUser current_user = FirebaseAuth.getInstance().getCurrentUser();
                    String uid = current_user.getUid();
 
-                   mDatabase = FirebaseDatabase.getInstance().getReference().child("user").child(uid);
+                   mDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
 
                    //creating user profile
                    HashMap<String, String> userMap = new HashMap<>();
                    userMap.put("name", display_name);
-                   userMap.put("status", "Hi there I'm using Hawkz App.");
+                   userMap.put("status", "Hi there I'm using Hawkeye App.");
                    userMap.put("image", "default");
                    userMap.put("thumb_image", "default");
 

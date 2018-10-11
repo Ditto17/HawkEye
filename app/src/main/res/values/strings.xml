@@ -22,8 +22,6 @@
 
     <string name="welcome_back">Welcome Back!</string>
     <string name="login_with_your_email_to_start_exploring">Login with your email to start exploring</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="display_names">Display Name</string>
     <string name="status">Status!</string>
@@ -31,7 +29,6 @@
     <string name="default_status">Status</string>
        <string name="Hawkeye">Hawkeye</string>
     <string name="login">login</string>
-    <string name="save_chnages">Save chnages</string>
-    <string name="save_changes">save_changes</string>
     <string name="your_status">Your Status</string>
+    <string name="save_changes">save changes</string>
 </resources>
