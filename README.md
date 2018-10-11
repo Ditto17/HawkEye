@@ -1,3 +1,3 @@
-# MyApplication
+# Hawkeye
 
 My first chat app!
