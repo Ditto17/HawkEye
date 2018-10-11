@@ -1,8 +1,11 @@
 package com.example.ditto.myapplication;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +29,9 @@ public class SettingActivity extends AppCompatActivity {
     private TextView mName;
     private TextView mStatus;
 
+    private Button mStatusbtn;
+    private Button mIamgebtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +40,8 @@ public class SettingActivity extends AppCompatActivity {
         mDisplayImage = (CircleImageView) findViewById(R.id.settings_image);
         mName = (TextView) findViewById(R.id.settings_display_name);
         mStatus = (TextView) findViewById(R.id.settings_status);
+
+        mStatusbtn = (Button) findViewById(R.id.settings_status_btn);
 
         mCurrentUser = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -59,6 +67,20 @@ public class SettingActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        mStatusbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String status_value = mStatus.getText().toString();
+
+                Intent status_intent = new Intent(SettingActivity.this, StatusActivity.class);
+                status_intent.putExtra("status_value", status_value);
+
+                startActivity(status_intent);
 
             }
         });
